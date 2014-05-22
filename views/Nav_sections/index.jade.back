@@ -1,0 +1,103 @@
+extends layout
+    block content  
+      #content
+        .row
+          col-md-3
+            &nbsp;
+          col-md-6
+            #apple-blurb
+              img( src="/images/apple.jpg" class="pull-left" style="width:4em;height:auto;" )
+              h3 Apple Authorized Service Provider             
+              |**Apollo Computers Inc. is now an Apple Authorized Service Provider.  We can now provide in and out-of-warranty service for Apple Macintosh computers.    
+              br
+              |**Now repairing iPhones/iPods (Out-of-Warranty Service Only)
+          col-md-3
+            &nbsp;
+ 
+        .row
+          .col-md-4
+            h3
+              |Networks
+            img( src="images/network.jpg" class="pull-left img-rounded img-border" )
+            |Apollo Computers designs, implements and supports all types of networks including home networks, Wireless Networks, Local Area Networks, as well Enterprise level Wide Area Networks. Our team of certified technicians have years of networking and Information Technology Consulting experience. Our professionalism, knowledge and attention to detail set us apart from the competition!
+            ul
+             li Network Design
+             li Local Area Networks
+             li Wide Area Networks
+             li Systems Integration
+             li Hardware Maintenance
+             li Network Administrationi
+             li Performance Monitoring
+             li Network Optimization
+             li Network Monitoring
+             li Wireless Networks
+            .row
+              .col-md-12
+                h3 Hardware
+                img( src="images/computer_hardware.gif" class="pull-left img-rounded img-border" )
+                |Apollo Computers supports all types of system repair including Dell, Gateway, HP, Compaq, and others. With our ability to diagnose and repair onsite, we save you the time and hassle of unplugging your computer and taking to the local repair shop.
+                |Our team of certified technicians will provide you with quality service that is second to none. Since most repairs are completed onsite, you will be assured that your computer has been repaired and working properly.
+                |We cover all hardware and software issues ranging from motherboards and power supplies to complete software restoration.
+                |Call today for an appointment that is generally made either the same or next day. 
+                                
+          .col-md-4
+            .jumbotron
+              |Welcome to Apollo Computers
+              img( src="/images/rocket.png" )
+          .col-md-4
+            h3
+              |What We Can Do For You
+            img( src="images/4_dudes.jpg" class="pull-right img-rounded img-border" style="margin-left:.25em" )
+            |Our Agents, Advisors and Installers teach people to embrace technology fearlessly and practice the art of human interaction.  We can fix any computer problem anytime, anywhere — no matter where you purchased your equipment. We’re also knowledgeable and certified home theater entertainment system specialists. 
+            p
+              |Computer Agents Can:
+              ul
+                li Provide round-the-clock emergency service liMacintosh Warranty Repair
+                li iPhone RepairliRepair crashed hard drives liMake nonprinting printers print 
+                li Help you get on the Internet 
+                li Contain virus outbreaks  
+                li Remove prying spyware 
+                li Install virus- and spyware-protection software 
+                li Show you how to use your digital camera 
+                li Connect home or office wireless networks 
+                li Secure networks from intruders 
+                li Help protect and back up important data 
+                li Perform system checkups and maintenance 
+                li Bring your computer up to date 
+                li Recommend hardware 
+                li Recommend software 
+                li Install hardware 
+                li Install software liSet up your MP3 or other digital device 
+                li Diagnose and repair small business computer systems 
+                li Recommend services
+             p
+               |Home Theater Advisors and Installers Can:
+               ul
+                 li Help you design your entertainment system and layout 
+                 li Help you determine which parts you need to complete your system 
+                 li Install one component or your entire system 
+                 li Set up your speaker system 
+                 li Connect your components to work together properly liCalibrate your TV 
+                 li Program your remote 
+                 li Show you how to work your entire system
+      footer
+        .row
+          .col-md-12(style="text-align:center")
+            &copy; Apollo Computers 2014   
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js')
+    script(src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
+    //script window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    //-script(src='javascripts/plugins.js')
+    //-script(src='javascripts/script.js')
+
+    //- Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //-
+      script
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');       

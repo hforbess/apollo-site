@@ -10,11 +10,6 @@ html.no-js
     link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Montserrat' )
     link(rel='stylesheet', href='stylesheets/normalize.css')
     script(src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.js')
-    // SCRIPTS
-    script(type="text/javascript", src="/linker/js/socket.io.js")
-    script(type="text/javascript", src="/linker/js/sails.io.js")
-    script(type="text/javascript", src="/linker/js/app.js")
-    // SCRIPTS END
     // STYLES
     link(rel="stylesheet", href="/linker/styles/apollo.css")
     link(rel="stylesheet", href="/linker/styles/mixins.css")
@@ -35,9 +30,7 @@ html.no-js
           .row
             .col-md-4
               h2
-                |Apollo
-              h3
-                |Computers
+                |eConstructors
             .col-md-4
               address
                 |Store Hours: Open Monday through Friday<br>
@@ -58,101 +51,38 @@ html.no-js
             .col-md-12
               ul.nav.nav-pills.red
                 li(class="active")
-                  a( href="#" data-toggle="pill") home
+                  a( href="#" data-toggle="pill" class="change-content" id="index") home
                 li
-                  a( href="#" data-toggle="pill") About Us
+                  a( href="#" data-toggle="pill" class="change-content" id="about") About Us
                 li.dropdown
                   a( href="#" class="data-toggle" data-toggle="dropdown") Services
                     span.caret
                   ul.dropdown-menu
                     li  
-                      a( href="#" data-toggle="pill") Business Services 
+                      a( href="#" data-toggle="pill" class="change-content" id="business-services") Business Services 
                     li  
-                      a( href="#" data-toggle="pill") Computer Services 
+                      a( href="#" data-toggle="pill" class="change-content" id="computer-services") Computer Services 
                     li  
-                      a( href="#" data-toggle="pill") Security  Services 
+                      a( href="#" data-toggle="pill" class="change-content" id="security-services") Security  Services 
                 li
                   a( href="#" data-toggle="pill") Schedule An Appointment 
                 li
-                  a( href="#" data-toggle="pill") Contact Us 
+                  a( href="#" data-toggle="pill" class="change-content" id="contact") Contact Us 
       #content
-        .row
-          col-md-3
-            &nbsp;
-          col-md-6
-            #apple-blurb
-              img( src="/images/apple.jpg" class="pull-left" style="width:4em;height:auto;" )
-              h3 Apple Authorized Service Provider             
-              |**Apollo Computers Inc. is now an Apple Authorized Service Provider.  We can now provide in and out-of-warranty service for Apple Macintosh computers.    
-              br
-              |**Now repairing iPhones/iPods (Out-of-Warranty Service Only)
-          col-md-3
-            &nbsp;
- 
-        .row
-          .col-md-4
-            h3
-              |Networks
-            img( src="images/network.jpg" class="pull-left img-rounded img-border" )
-            |Apollo Computers designs, implements and supports all types of networks including home networks, Wireless Networks, Local Area Networks, as well Enterprise level Wide Area Networks. Our team of certified technicians have years of networking and Information Technology Consulting experience. Our professionalism, knowledge and attention to detail set us apart from the competition!
-            ul
-             li Network Design
-             li Local Area Networks
-             li Wide Area Networks
-             li Systems Integration
-             li Hardware Maintenance
-             li Network Administrationi
-             li Performance Monitoring
-             li Network Optimization
-             li Network Monitoring
-             li Wireless Networks
-          .col-md-4
-            .jumbotron
-              |Welcome to Apollo Computers
-              img( src="/images/rocket.png" )
-          .col-md-4
-            h3
-              |What We Can Do For You
-            img( src="images/4_dudes.jpg" class="pull-right img-rounded img-border" style="margin-left:.25em" )
-            |Our Agents, Advisors and Installers teach people to embrace technology fearlessly and practice the art of human interaction.  We can fix any computer problem anytime, anywhere — no matter where you purchased your equipment. We’re also knowledgeable and certified home theater entertainment system specialists. 
-            p
-              |Computer Agents Can:
-              ul
-                li Provide round-the-clock emergency service liMacintosh Warranty Repair
-                li iPhone RepairliRepair crashed hard drives liMake nonprinting printers print 
-                li Help you get on the Internet 
-                li Contain virus outbreaks  
-                li Remove prying spyware 
-                li Install virus- and spyware-protection software 
-                li Show you how to use your digital camera 
-                li Connect home or office wireless networks 
-                li Secure networks from intruders 
-                li Help protect and back up important data 
-                li Perform system checkups and maintenance 
-                li Bring your computer up to date 
-                li Recommend hardware 
-                li Recommend software 
-                li Install hardware 
-                li Install software liSet up your MP3 or other digital device 
-                li Diagnose and repair small business computer systems 
-                li Recommend services
+        .spinner
+        img( src="/images/spiffy.gif")
       footer
-        block footer
+        .row
+          .col-md-12(style="text-align:center")
+            &copy; eConstructors 2014   
 
-
-    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
-    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js')
-    script(src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
-    //script window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
-    //-script(src='javascripts/plugins.js')
-    //-script(src='javascripts/script.js')
-
-    //- Google Analytics: change UA-XXXXX-X to be your site's ID.
-    //-
-      script
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');       
+      script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+      script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js')
+      script(src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
+      script(src='/assets/linker/apollo.js')
+      // SCRIPTS
+      script(type="text/javascript", src="/linker/js/socket.io.js")
+      script(type="text/javascript", src="/linker/js/sails.io.js")
+      script(type="text/javascript", src="/linker/js/app.js")
+      // SCRIPTS END
+    

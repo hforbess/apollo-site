@@ -19,7 +19,14 @@ module.exports = {
     
   
 
+  sendSection: function( req, res ){
+    var section = req.param('name');
+    section = 'Nav_sections/'+ section;    
+    res.render( section );
+    //res.render("Nav_sections/" + section );
 
+
+  },
   /**
    * Overrides for the settings in `config/controllers.js`
    * (specific to Nav_sectionsController)
