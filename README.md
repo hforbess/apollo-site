@@ -1,3 +1,5 @@
+The original client backed out. 
+
 This is in the development phase
 
 
@@ -5,4 +7,4 @@ this is a single page static site for a business.  A brochure site.  It uses Nod
 
 TODO. Make an admin where the pages and sections can be edited and created.
 This would use Mongodb and utilize web sockets.
-see the demo at http://apollo.econtructors.com
+
